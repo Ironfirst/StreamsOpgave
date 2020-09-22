@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Main implements ZeroArgument {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -40,17 +40,12 @@ public class Main implements ZeroArgument {
                 .filter(movie -> movie.antalMin>122)
                 .filter(movie -> movie.likes>15)
                 .filter(movie -> movie.prodYear>1980)
-                .filter(Movie -> Movie.)
+                .filter(movie -> movie.test())
+                .filter(movie -> movie.get())
                 .collect(Collectors.toList());
 
         System.out.println(moviest);
 
 
-    }
-
-    @Override
-    public boolean test()
-    {
-        return false;
     }
 }
